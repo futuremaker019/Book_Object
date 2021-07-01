@@ -12,6 +12,7 @@ public class TicketOffice {
     }
 
     public Ticket getTicket(){
+        // remove : 0번째 인덱스의 값이 지워지면서 지워진 값을 리턴한다.
         return tickets.remove(0);
     }
 

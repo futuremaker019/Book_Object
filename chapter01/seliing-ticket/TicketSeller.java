@@ -6,7 +6,12 @@ public class TicketSeller {
         this.ticketOffice = ticketOffice;
     }
 
-    public TicketOffice getTicketOffice() {
-        return ticketOffice;
+    // TicketSeller 클래스에서 getTicketOffice 메서드가 사라진다.
+//    public TicketOffice getTicketOffice() {
+//        return ticketOffice;
+//    }
+
+    public void sellTo(Audience audience){
+        ticketOffice.plusAmount(audience.buy(ticketOffice.getTicket()));
     }
 }
